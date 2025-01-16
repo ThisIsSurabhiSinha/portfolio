@@ -38,13 +38,49 @@
 
 // export default Timeline;
 
+// import React, { useContext } from 'react';
+// import '../Css/Timeline.css';
+// import '../Css/Education.css';
+// import placeholder from '../assests/placeholder.jpeg';
+// import { ThemeContext } from './ThemeContext';
 
-import React from 'react';
+// const Timeline = ({ timelineData }) => {
+//     const [isDarkMode] = useContext(ThemeContext);
+    
+//     if (!timelineData) return <h2>Something went wrong.....</h2>;
+
+//     return (
+//         <div className="timeline">
+//             {timelineData.map((item, index) => (
+//                 <div
+//                     key={index}
+//                     className={`containr ${item.type}`} 
+//                 >
+//                     <img src={placeholder} alt="institute-icon" />
+//                     <div className={`text-box ${isDarkMode ? 'dark' : 'light'}`}> 
+//                         <h2>{item.title}</h2>
+//                         <h3>{item.institute}</h3>
+//                         <small>{item.duration}</small>
+//                         <p>{item.description}</p>
+//                         <span className={`${item.type}-arrow`} /> {/* Corrected */}
+//                     </div>
+//                 </div>
+//             ))}
+//         </div>
+//     );
+// };
+
+// export default Timeline;
+
+import React ,{useContext} from 'react';
 import '../Css/Timeline.css';
 import '../Css//Education.css'
 import placeholder from '../assests/placeholder.jpeg'
+import { ThemeContext } from './ThemeContext';
 
 const Timeline = ({ timelineData }) => {
+    // const [isDarkMode] = useContext(ThemeContext);
+    const { isDarkMode } = useContext(ThemeContext);
     if(!timelineData) return (
         <h2>Something went wrong.....</h2>
     )
@@ -56,7 +92,7 @@ const Timeline = ({ timelineData }) => {
           className={`containr ${item.type}` }
         >
           <img src={placeholder} alt="institute-icon" />
-          <div className="text-box">
+          <div  className={`text-box ${isDarkMode ? 'dark' : 'light'}`}>
             <h2>{item.title}</h2>
             <h3>{item.institute}</h3>
             <small>{item.duration}</small>
@@ -70,4 +106,3 @@ const Timeline = ({ timelineData }) => {
 };
 
 export default Timeline;
-

@@ -33,7 +33,7 @@ const Experiences = () => {
 
   return (
     <div>
-      <h1>Experience Timeline</h1>
+      <h1>My Journey So Far</h1>
       <Timeline timelineData={timelineData} />
     </div>
   );

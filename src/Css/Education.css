@@ -1,4 +1,4 @@
-
+/* 
   
   .category-button {
     background-color: transparent;
@@ -14,14 +14,12 @@
   
   .category-button:hover {
     background-color: #58a6ff8f;
-    /* background-color: #1f6dc0; */
   }
   
   .category-button.active {
     background-color: #58a6ff8f;
     background-color: #1f6dc0;
-    /* font-weight: bold; */
-  }
+  } */
 
   
   .education-timeline-section h1{

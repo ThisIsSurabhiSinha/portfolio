@@ -5,8 +5,7 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-    /* background-color: coral; */
-    grid-template-columns: 1fr; /* Default to 1 column */
+    grid-template-columns: 1fr; 
   }
   
   @media (min-width: 768px) {
