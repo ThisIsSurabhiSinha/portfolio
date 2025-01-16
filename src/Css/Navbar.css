@@ -80,7 +80,7 @@
   color: antiquewhite;
   padding-top: 1rem;
   height: max-content;
-  transition: background-color 1s ease;
+  transition:  2s ease-out;
 }
 
 /* Styling for nav items */
@@ -255,7 +255,7 @@
   justify-content: flex-start;
   align-items: center;
 }
-
+/* 
 .nav-item-cus {
   position: relative;
   padding: 0.2rem;
@@ -263,11 +263,15 @@
   cursor: pointer;
   text-align: center;
   color: #e4e4e4;
-}
+} */
 
 .nav-item-cus:hover {
   color: rgb(53, 159, 150);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.nav-item-cus {
+  position: relative;
 }
 
 .nav-item-cus::after {
@@ -282,9 +286,23 @@
   transition: width 0.5s ease-out;
 }
 
+
 .nav-item-cus:hover::after {
   width: 100%;
 }
+
+.active::after{
+  content: "";
+  position: absolute;
+  border-radius: 1px;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  background-color: orange;
+  width: 100%;
+
+}
+
 
 .menu-icon {
   display: flex;

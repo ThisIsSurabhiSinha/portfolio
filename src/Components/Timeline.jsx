@@ -55,7 +55,7 @@ const Timeline = ({ timelineData }) => {
           key={index}
           className={`containr ${item.type}` }
         >
-          <img src={item.img || `${placeholder}`} alt="institute-icon" />
+          <img src={placeholder} alt="institute-icon" />
           <div className="text-box">
             <h2>{item.title}</h2>
             <h3>{item.institute}</h3>
