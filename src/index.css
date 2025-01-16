@@ -1,0 +1,101 @@
+/* Light mode (default) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* :root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #4A90E2;
+  --secondary-color: #50E3C2;
+  --border-color: #e0e0e0;
+}
+
+/* Dark mode */
+/* .dark-mode {
+  --background-color: #1E1E2E;
+  --text-color: #E4E4E4;
+  --primary-color: #82AAFF;
+  --secondary-color: #C3E88D;
+  --border-color: #44475A;
+}  */
+
+a {
+  text-decoration: none !important;
+}
+
+.root{
+  width: 100dvw;
+  min-height: 100vh;
+}
+
+
+
+.root{
+  flex: 1; 
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: max-content;
+  height: 100%;
+  
+}
+
+.main-section{
+  flex-grow:1;
+}
+
+.site-wrapper{
+  min-width: 100dvb;
+  display: flex;
+  flex-direction: column;
+  min-height:100dvh;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #6084aea4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #58a6ff90;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0b6bd990;
+  border-radius: 12px;
+}
+
+
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #4caf50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
