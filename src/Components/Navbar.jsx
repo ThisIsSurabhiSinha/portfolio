@@ -54,10 +54,10 @@
 
 // export default Navbar;
 
-import React, { useState, useEffect } from "react";
+import React, { useState ,useContext} from "react";
 import { NavLink} from "react-router-dom";
 import "../Css/Navbar.css";
-// import avatar from "./avatar.png";
+import { ThemeContext } from "./ThemeContext.js"; 
 import {
   FaBars,
   FaTimes,
@@ -250,30 +250,18 @@ import {
 // export default Navbar;
 
 
-
 const Navbar = () => {
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext); // Access the theme context
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
+  const nav_item_text_class = `nav-item-text ${isDarkMode ? "dark" : "light"}`
+  const nav_item_cus_class = `nav-item-cus ${isDarkMode ? "dark" : "light"} `
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
-  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
-
-  useEffect(() => {
-    const storedMode = localStorage.getItem("theme");
-    setIsDarkMode(storedMode === "dark");
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-    document.body.classList.toggle("dark-mode", isDarkMode);
-  }, [isDarkMode]);
-
   return (
-    <nav className={`navbar-cus light-mode ${isMenuOpen ? "navbar-cus-show-menu" : ""}`}>
-      <div className="navbar-brand-cus">
+    <nav className={`navbar-cus ${isDarkMode ? "dark" : "light"} ${isMenuOpen ? "navbar-cus-show-menu" : ""}`}>
+      <div className={`navbar-brand-cus {nav_item_text_class}`}>
         <div className="nav-brand-name-hide">
           <div className="nav-brand-name">
             <h2 className="brand-name-first">SURABHI</h2>
@@ -290,40 +278,40 @@ const Navbar = () => {
       </div>
       <div className={`nav-items ${isMenuOpen ? "show-menu" : ""}`}>
         <ul>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <div className="nav-item-content">
                 <FaHome className="nav-item-icon" />
-                <span className="nav-item-text">Home</span>
+                <span className={nav_item_text_class}>Home</span>
               </div>
             </NavLink>
           </li>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <div className="nav-item-content">
                 <FaUser className="nav-item-icon" />
-                <span className="nav-item-text">About</span>
+                <span className={nav_item_text_class}>About</span>
               </div>
             </NavLink>
           </li>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <div className="nav-item-content">
                 <FaProjectDiagram className="nav-item-icon" />
-                <span className="nav-item-text">Projects</span>
+                <span className={nav_item_text_class}>Projects</span>
               </div>
             </NavLink>
           </li>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/resume.pdf"
               target="_blank"
@@ -331,37 +319,46 @@ const Navbar = () => {
             >
               <div className="nav-item-content">
                 <FaFileAlt className="nav-item-icon" />
-                <span className="nav-item-text">Resume</span>
+                <span className={nav_item_text_class}>Resume</span>
               </div>
             </NavLink>
           </li>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/skills"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <div className="nav-item-content">
                 <FaCode className="nav-item-icon" />
-                <span className="nav-item-text">Skills</span>
+                <span className={nav_item_text_class}>Skills</span>
               </div>
             </NavLink>
           </li>
-          <li className="nav-item-cus">
+          <li className={nav_item_cus_class}>
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <div className="nav-item-content">
                 <FaEnvelope className="nav-item-icon" />
-                <span className="nav-item-text">Contact</span>
+                <span className={nav_item_text_class}>Contact</span>
               </div>
             </NavLink>
           </li>
-          <li className="theme-toggle nav-item-cus" onClick={toggleDarkMode}>
+          {/* <li className="theme-toggle nav-item-cus" onClick={toggleDarkMode}>
             {isDarkMode ? (
               <FaSun style={{ color: "orange", fontSize: "1.75rem" }} />
             ) : (
               <FaMoon style={{ color: "gray", fontSize: "1.75rem" }} />
+            )}
+          </li> */}
+
+<li className={`theme-toggle ${nav_item_cus_class}`} onClick={toggleDarkMode}>
+            {isDarkMode ? (
+              <FaMoon style={{ color: "gray", fontSize: "1.75rem" }} />
+            ) : (
+              <FaSun style={{ color: "orange", fontSize: "1.75rem" }} />
+              
             )}
           </li>
         </ul>

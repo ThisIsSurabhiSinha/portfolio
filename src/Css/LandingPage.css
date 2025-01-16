@@ -30,10 +30,10 @@
   .intro {
     gap:1.5rem;
     display: flex;
-    flex-direction: column; /* Align items column-wise */
-    align-items: flex-start; /* Align items to the start */
-    margin: 5rem 0; /* Add spacing */
-    text-align: left; /* Ensure text aligns properly */
+    flex-direction: column; 
+    align-items: flex-start;
+    margin: 5rem 0; 
+    text-align: left; 
   }
   
   .img-home-main {
@@ -74,20 +74,26 @@
   .name {
     font-size: 4rem;
     font-weight: bold;
-    color: #58a6ff;
+    
     
   }
-  
-  .status {
+  .name.dark{
+    color: #58a6ff;
+  }
+
+  .name.light{
+    color: #041120;
+  }
+
+  /* .status {
     font-size: 1.5rem;
     margin: 1rem 0;
     color: #8b949e;
-    /* align-self:flex-start; */
-  }
+    background-color: aqua;
+  } */
 
   .download-button {
     background-color: transparent;
-    color:#58a6ff ;
     border: 1px solid #8b949e;
     border-radius: 5px;
     padding: 0.8rem 2rem;
@@ -95,11 +101,25 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .download-button.light{
+    color:#041120;
+    font-weight: 500;
+    border: 1px solid  #041120;
+  }
   
-  .download-button:hover {
+  .download-button.dark{
+    color:#58a6ff ;
+  }
+
+  .download-button.dark:hover {
     background-color: #58a6ff90;
     color: #ffffff;
-  
+  }
+
+  .download-button.light:hover{
+    background-color: #041120;
+    color: #ffffff;
   }
 
   .wave {
@@ -137,14 +157,6 @@
     }
   }
 
-  /* .img-home-main img{
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
-    
-  
-  } */
-   
   @keyframes cursor {
     from, to {
       border-color: transparent;
@@ -187,9 +199,14 @@
     text-transform: uppercase;
     letter-spacing: 0;
     animation: slide 15s step-start infinite;
-    color:#ffffff;
     
+  }
 
+  .typing-slider.dark p{
+    color:#ffffff;
+  }
+  .typing-slider.light p{
+    color:#1a1a1a;
   }
   
   .typing-slider p::after {
@@ -199,8 +216,15 @@
     right: 0;
     bottom: 0;
     border-left: 3px solid black;
-    background-color: #070719 ;
     animation: typing 5s infinite, cursor 1s infinite;
+  }
+
+  .typing-slider.light p::after{
+    background-color: #B0E0E6;
+  }
+
+  .typing-slider.dark p::after{
+    background-color: #070719 ;
   }
   
   .typing-slider p:nth-child(1) {
@@ -226,33 +250,3 @@
     animation-delay: 10s;
     animation-timing-function: steps(14), step-end;
   }
-
-  /* .my-pic{
-    justify-self:center;
-    align-self: center;
-    padding: 1rem;;
-  } */
-
-  /* .intro {
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .intro > * {
-    text-align: center; 
-  width:100%;  
-  } */
-  
-
-  /* @media screen and (max-width:580px) {
-    .intro{
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      justify-content:center; 
-      gap:0.5rem;
-    }
-  } */

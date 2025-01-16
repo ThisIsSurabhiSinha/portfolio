@@ -37,19 +37,19 @@
 
 // export default AboutLayout;
 
-import React from "react";
+import React ,{useContext} from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { Slide } from "react-reveal";
 import "../Css/About.css";
+import { ThemeContext } from "./ThemeContext";
 
 const AboutLayout = () => {
   const navigate = useNavigate();
-
+  const { isDarkMode } = useContext(ThemeContext); 
   return (
-    <div className="about-container">
-      {/* Sub-navbar for navigation */}
-      {/* <Slide> */}
-        <div className="sub-navbar">
+    <div className={`about-container ${isDarkMode ? "dark" : "light"}`}>
+    
+        <div className={`sub-navbar ${isDarkMode ? "dark" : "light"}`}>
           <Slide left>
             <button className="nav-button" onClick={() => navigate("/about")}>
               About Me
@@ -72,7 +72,7 @@ const AboutLayout = () => {
             </button>
           </Slide>
         </div>
-      {/* </Slide> */}
+        
       {/* Outlet to render child components */}
       <div className="tab-content">
         <Outlet />

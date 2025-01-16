@@ -43,7 +43,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/scss/bootstrap.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Loader from "./Components/Loader"; // Import the loader
+import Loader from "./Components/Loader"; 
+import { ThemeProvider } from './Components/ThemeContext';
 
 // Lazy-loaded components
 const Layout = lazy(() => import("./Components/Layout.jsx"));
@@ -57,9 +58,14 @@ const Experiences = lazy(() => import("./Components/Experiences.jsx"));
 const AboutLayout = lazy(() => import("./Components/AboutLayout.jsx"));
 const NotFound = lazy(() => import("./Components/NotFound.jsx"));
 
+
 function App() {
+
+
+
   return (
-    <Router>
+   <ThemeProvider>
+     <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -77,6 +83,7 @@ function App() {
         </Routes>
       </Suspense>
     </Router>
+   </ThemeProvider>
   );
 }
 

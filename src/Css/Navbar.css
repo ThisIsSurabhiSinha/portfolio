@@ -66,27 +66,41 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+  height: max-content;
+  transition:  2s ease-out;
+}
+
+.navbar-cus.dark{
   background: linear-gradient(
     to right,
     rgba(2, 2, 24, 0.4),
     rgba(5, 5, 57,0.9),
     rgba(2, 2, 24, 0.4)
   );
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
   color: antiquewhite;
-  padding-top: 1rem;
-  height: max-content;
-  transition:  2s ease-out;
 }
 
-/* Styling for nav items */
+.navbar-cus.light{
+  background: linear-gradient(
+    to right,
+    rgba(2, 2, 24),
+    rgba(5, 5, 57),
+    rgba(2, 2, 24)
+  );
+  color: rgb(16, 16, 16);
+}
+
 .nav-item-text {
   color: antiquewhite;
 }
+
+
 
 /* Brand section */
 .nav-brand-name-hide {
@@ -108,9 +122,17 @@
   width: auto;*/
   width: 30%;
   /* position: relative;  */
-  background-color: #05a8f3;
+  
   margin-bottom: 0.85rem;
 }
+
+/* .navbar-brand-cus.dark{
+  background-color: #05a8f3;
+}
+
+.navbar-brand-cus.light{
+  background-color:rgb(5, 5, 57);
+} */
 
 /* Position for the brand name */
 /* .nav-brand-name{
@@ -154,9 +176,6 @@
     font-size: 2.5rem; /* Smaller font size for mobile */
   }
 
-  .brand-img img {
-    max-width: 80px; /* Adjust image size */
-  }
 }
 
 /* Adjustments for very small screens */
@@ -165,18 +184,10 @@
     font-size: 1.8rem;
   }
 
-  .navbar-brand-cus {
-    /* flex-direction: column;
-    gap: 0.5rem; */
-  }
-
   .nav-brand-name h2 {
-    font-size: 2rem; /* Further reduce font size */
+    font-size: 2rem; 
   }
 
-  .brand-img img {
-    max-width: 60px; /* Further adjust image size */
-  }
 }
 
 @keyframes waves {
@@ -406,15 +417,15 @@
 .nav-item-content {
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px; 
 }
 
 .nav-item-icon {
-  font-size: 1.2rem; /* Adjust icon size */
+  font-size: 1.2rem; 
 }
 
 .nav-item-text {
-  font-size: 1rem; /* Adjust text size */
+  font-size: 1rem; 
 }
 
 /* For screens above 767px, align icons and text in a column */
@@ -425,75 +436,8 @@
     /* padding: 0.5rem;  */
   }
 
-  .nav-item-icon {
-    /* margin-bottom: 4px;  */
-  }
 
   .nav-item-text {
-    font-size: 1.25rem; /* Adjust text size for larger screens if needed */
+    font-size: 1.5rem; 
   }
 }
-
-body {
-  /* margin: 0;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  height: 100vh;
-  background-color: black; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-/* 
-.nav-brand-name {
-  position: relative;
-}
-
-
-.nav-brand-name h2 {
-  font-size:2rem;
-  position:absolute;
-  transform: translate(0%, -50%);
-  margin: 0;
-}
-
-.brand-name-first {
-  color: transparent;
-  -webkit-text-stroke: 2px #05a8f3;
-}
-
-.brand-name-second {
-  color: #05a8f3;
-  -webkit-text-stroke: 2px #05a8f3;
-  animation: waves 4s ease-in-out infinite;
-}
-
-@keyframes waves {
- 0%,
-	100% {
-		clip-path: polygon(
-			0% 45%,
-			16% 44%,
-			33% 50%,
-			54% 60%,
-			70% 61%,
-			84% 59%,
-			100% 52%,
-			100% 100%,
-			0% 100%
-		);
-	}
-
-	50% {
-		clip-path: polygon(
-			0% 60%,
-			15% 65%,
-			34% 66%,
-			51% 62%,
-			67% 50%,
-			84% 45%,
-			100% 46%,
-			100% 100%,
-			0% 100%
-		);
-	} 
-} */

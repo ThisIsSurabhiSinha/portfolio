@@ -8,7 +8,7 @@
 }
 
 
-.light-mode{
+.light{
   --bg-color: #eff7f9;
   --text-color: #4d4d4d;
   --primary-color: #0056a6;
@@ -52,10 +52,17 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color:var(--bg-color) !important ;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body.dark{
+  background-color: #070719; 
+}
+
+body.light{
+  background-color: #B0E0E6;
+}
 
 .root{
   width: 100dvw;

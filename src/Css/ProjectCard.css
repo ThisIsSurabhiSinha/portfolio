@@ -33,8 +33,8 @@
   }
   
   .card-front {
-    background-color: #070719;
-    color: #58a6ff;
+    /* background-color: #070719;
+    color: #58a6ff; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,15 @@
     text-align: center;
     gap:1rem;
   }
-  
+
+  .card-front.dark{
+    background-color: #070719;
+    color: #58a6ff;
+  }
+  .card-front.light{
+    background-color: #A3C6FF;
+    color:#070719;
+  }
   .card-front img {
     width: 100%;
     height: 70%;
@@ -50,14 +58,24 @@
   }
   
   .card-back {
-    background-color: #01013197;
-    color: rgb(183, 176, 176);
+    /* background-color: #01013197;
+    color: rgb(183, 176, 176); */
     transform: rotateY(180deg);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+  }
+  .card-back.dark{
+    background-color: #01013197;
+    color: rgb(183, 176, 176);
+  }
+
+  .card-back.light{
+    background-color: #add8e6;
+    color: rgb(183, 176, 176);
+    box-shadow: 0 4px 8px rgba(36, 50, 206, 0.4);
   }
   
   .card-back h3,
