@@ -1,13 +1,15 @@
 import React from "react";
 import "../Css/ProjectCard.css";
+import placeholder  from "../assests/placeholder.jpeg"
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <div className="card-inner">
+
         {/* Front Side */}
         <div className="card-front">
-          <img src={project.image} alt={`${project.name} preview`} />
+          <img src={placeholder } alt={`${project.name} preview`} />
           <h2>{project.name}</h2>
         </div>
 

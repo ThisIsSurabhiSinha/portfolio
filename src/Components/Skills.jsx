@@ -7,8 +7,14 @@ const Skills = () => {
     { title: "Languages", items: ["JavaScript", "Python", "C++", "Java"] },
     { title: "Tools", items: ["Git", "Docker", "VS Code", "Figma"] },
     { title: "Libraries", items: ["React", "Redux", "Tailwind", "Bootstrap"] },
-    { title: "DSA & Algorithms", items: ["Sorting", "Graph Algorithms", "DP", "Backtracking"] },
-    { title: "Coding Profiles", items: ["LeetCode", "Codeforces", "Coding Ninjas", "GeeksForGeeks"] },
+    {
+      title: "DSA & Algorithms",
+      items: ["Sorting", "Graph Algorithms", "DP", "Backtracking"],
+    },
+    {
+      title: "Coding Profiles",
+      items: ["LeetCode", "Codeforces", "Coding Ninjas", "GeeksForGeeks"],
+    },
   ];
 
   // Trail animation for rows
@@ -32,23 +38,22 @@ const Skills = () => {
       <div className="skills-content">
         {trail.map((animation, index) => (
           <animated.div key={index} style={animation} className="skill-row">
-            
             <div className="skill-items">
-            <h3>{rows[index].title}</h3>
+              <h3>{rows[index].title}</h3>
               <div className="skill-item-place">
-              {rows[index].items.map((item, idx) => (
-                <animated.div
-                  key={idx}
-                  style={{
-                    opacity: 1,
-                    transform: "translateX(0px)",
-                    animation: `fadeInLeft ${idx * 0.1}s ease-out forwards`,
-                  }}
-                  className="skill-item"
-                >
-                  {item}
-                </animated.div>
-              ))}
+                {rows[index].items.map((item, idx) => (
+                  <animated.div
+                    key={idx}
+                    style={{
+                      opacity: 1,
+                      transform: "translateX(0px)",
+                      animation: `fadeInLeft ${idx * 0.1}s ease-out forwards`,
+                    }}
+                    className="skill-item"
+                  >
+                    {item}
+                  </animated.div>
+                ))}
               </div>
             </div>
           </animated.div>

@@ -2,16 +2,16 @@
 const projects = [
     {
       name: "Portfolio Website",
-      image: "avatar.png", // Replace with your image path
-      technologies: "React, CSS, JavaScript",
+      image: "../assests/placeholder.jpeg", 
+      technologies: "Html, React, CSS, JavaScript , ",
       description: "A personal portfolio website to showcase my projects and skill",
       deployed: "https://your-portfolio-link.com",
       category: "Frontend",
     },
     {
       name: "Pizza App",
-      image: "../assests/placeholder.jpeg", // Replace with your image path
-      technologies: "Django, Bootstrap, REST APIs",
+      image: "../assests/placeholder.jpeg", 
+      technologies: "Html, CSS, Javascript, Django, Bootstrap, REST APIs, Jquery, ",
       description: "A pizza ordering platform with order tracking and history.",
       github: "../assests/placeholder.jpeg",
       deployed: "https://your-pizza-app-link.com",
