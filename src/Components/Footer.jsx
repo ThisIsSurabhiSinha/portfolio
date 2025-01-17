@@ -1,15 +1,15 @@
 // 
 
 import React from "react";
-import "../Css/Footer.css";
+ import "../Css/Footer.css";
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  const handleClick = (platform) => {
-    console.log(`Clicked on ${platform}`);
-  };
+  // const handleClick = (platform) => {
+  //   console.log(`Clicked on ${platform}`);
+  // };
 
   return (
     <footer className="footer-cus">
@@ -19,7 +19,6 @@ const Footer = () => {
             href="http://github.com/thisissurabhisinha"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => handleClick("GitHub")}
           >
             <FaGithub className="icon" aria-hidden="true" />
           </a>
@@ -29,17 +28,15 @@ const Footer = () => {
             href="mailto:surabhisinha514@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => handleClick("Email")}
           >
             <FaEnvelope className="icon" aria-hidden="true" />
           </a>
         </div>
         <div className="box">
           <a
-            href="https://goo.gl/maps/goa"
+            href="https://en.wikipedia.org/wiki/Uttar_Pradesh"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => handleClick("Map")}
           >
             <FaMapMarkerAlt className="icon" aria-hidden="true" />
           </a>
@@ -49,7 +46,6 @@ const Footer = () => {
             href="https://www.linkedin.com/in/thisissurabhisinha"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => handleClick("LinkedIn")}
           >
             <FaLinkedin className="icon" aria-hidden="true" />
           </a>
