@@ -339,6 +339,9 @@
 
 }
 
+.theme-toggley{
+  cursor: pointer;
+}
 .show-menu ul {
  
   gap: 0.75rem;

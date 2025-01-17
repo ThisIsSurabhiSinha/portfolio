@@ -124,14 +124,17 @@
 
 // Contact.js
 // Contact.js
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
 import ContactForm from "./ContactForm";
 import Modal from "./Modal";
 import { FaEnvelope, FaPhone, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 import "../Css/Contact.css";
+import { ThemeContext } from "./ThemeContext";
 
 const Contact = () => {
+  const {isDarkMode} = useContext(ThemeContext)
+  const themeClass = isDarkMode?"dark":"light"
   const [modalData, setModalData] = useState({
     show: false,
     isLoading: false,
@@ -153,10 +156,11 @@ const Contact = () => {
 
   return (
     <Fade>
-      <div className="contact-container">
-        <h2>Contact Me</h2>
+      <div className= {`contact-container ${themeClass}`}>
+        <h2>Contact & Collaborate
+        </h2>
 
-        <div className="form-section">
+        <div className= {`form-section ${themeClass}`}>
           <h3>Send a Message</h3>
           <ContactForm
             onModalOpen={handleModalOpen}
@@ -165,7 +169,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="info-section">
+        <div className={`info-section ${themeClass}`} >
           <h3>Contact Information</h3>
           <p>
             <FaEnvelope /> <strong>Email:</strong> yourname@example.com

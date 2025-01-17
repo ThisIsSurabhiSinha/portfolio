@@ -8,9 +8,30 @@
     grid-template-columns: 1fr; 
   }
   
+  .project-container.dark{
+    color:#1f6dc0;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .project-container.light{
+    color: #070719;
+    padding: 50px;
+    text-align: center;
+  }
+  .project-container.dark h2{
+    text-align: center;
+    color:#58a6ff;
+  }
+
+  .project-container.light h2{
+    text-align: center;
+    color:#070719;
+  }
+  
   @media (min-width: 768px) {
     .display-projects {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
@@ -31,24 +52,39 @@
   
   .category-button {
     background-color: transparent;
-    color: white;
     padding: 10px 20px;
-    border: 1px solid grey;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
     font-weight: 600;
   }
-  
-  .category-button:hover {
-    background-color: #58a6ff8f;
-    /* background-color: #1f6dc0; */
+
+  .category-button.dark{
+    color: white;
+    border: 1px solid grey;
   }
   
-  .category-button.active {
+  .category-button.light{
+    color: #070719;
+    border: 1px solid #070719;
+  }
+
+  .category-button.dark:hover {
     background-color: #58a6ff8f;
+  }
+
+  .category-button.light:hover{
+    background-color: #070719;
+    color: white;
+  }
+  
+  .category-button.dark.active {
     background-color: #1f6dc0;
-    /* font-weight: bold; */
   }
-  
+ 
+  .category-button.light.active{
+    background-color: #070719;
+    color: white;
+  }
+   

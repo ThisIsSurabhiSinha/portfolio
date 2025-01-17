@@ -331,7 +331,7 @@
 import React, { useContext } from "react";
 import Lottie from "lottie-react";
 import animationData from "../assests/Main Scene.json";
-import { ThemeContext } from "../Components/ThemeContext";
+import { ThemeContext } from "./ThemeContext";
 
 const About = () => {
   const { isDarkMode } = useContext(ThemeContext);

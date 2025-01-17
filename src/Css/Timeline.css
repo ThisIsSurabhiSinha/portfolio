@@ -97,14 +97,14 @@
   }
 
   .text-box.dark{
-    background: #d1dee5;
+    background-color: #d1dee5;
     box-shadow: 0 4px 6px #58cded , 0 1px 3px #54c3e299;
 
   }
   
   .text-box.light{
     font-weight: 400;
-    background: #ededf4;
+    background-color: #ededf4;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 

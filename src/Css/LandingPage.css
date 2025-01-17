@@ -46,8 +46,6 @@
   }
   
   .my-pic  {
-    
-    
     height: auto;
     border-radius: 50%;
 
@@ -83,6 +81,7 @@
 
   .name.light{
     color: #041120;
+    
   }
 
   /* .status {
@@ -207,6 +206,7 @@
   }
   .typing-slider.light p{
     color:#1a1a1a;
+    color: rgb(0, 102, 204);
   }
   
   .typing-slider p::after {

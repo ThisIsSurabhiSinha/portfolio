@@ -57,11 +57,11 @@ body {
 }
 
 body.dark{
-  background-color: #070719; 
+  background-color: #070719 !important; 
 }
 
 body.light{
-  background-color: #B0E0E6;
+  background-color: #B0E0E6 !important;
 }
 
 .root{
