@@ -262,7 +262,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar-cus ${isDarkMode ? "dark" : "light"} ${isMenuOpen ? "navbar-cus-show-menu" : ""}`}>
       <div className={`navbar-brand-cus {nav_item_text_class}`}>
-        <div className="nav-brand-name-hide">
+        <div className="nav-brand-name-wrap">
           <div className="nav-brand-name">
             <h2 className="brand-name-first">SURABHI</h2>
             <h2 className="brand-name-second">SURABHI</h2>
@@ -353,7 +353,7 @@ const Navbar = () => {
             )}
           </li> */}
 
-<li className={`theme-toggle ${nav_item_cus_class}`} onClick={toggleDarkMode}>
+<li className={`theme-toggle` } onClick={toggleDarkMode}>
             {isDarkMode ? (
               <FaMoon style={{ color: "gray", fontSize: "1.75rem" }} />
             ) : (
