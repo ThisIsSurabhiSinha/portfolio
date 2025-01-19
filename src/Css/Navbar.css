@@ -286,7 +286,7 @@
   cursor: pointer;
 }
 
-.nav-item-cus.theme-toggle:hover:{
+.nav-item-cus.theme-toggle:hover{
   width: 0 !important;
 }
 
