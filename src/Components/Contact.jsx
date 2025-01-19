@@ -128,7 +128,7 @@ import React, { useState , useContext} from "react";
 import ContactForm from "./ContactForm";
 import Modal from "./Modal";
 import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import "../Css/Contact.css";
 import { ThemeContext } from "./ThemeContext";
 

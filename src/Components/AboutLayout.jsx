@@ -39,7 +39,7 @@
 
 import React ,{useContext} from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Slide } from "react-reveal";
+import { Slide } from "react-awesome-reveal";
 import "../Css/About.css";
 import { ThemeContext } from "./ThemeContext";
 
