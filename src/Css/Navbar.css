@@ -1,65 +1,4 @@
-/* 
-.navbar-cus {
-  position: sticky;
-  cursor: pointer;
-  top:0;
-  z-index:1000;
-  background: linear-gradient(
-  to right, 
-  rgba(2, 2, 24, 0.4),  
-  rgba(5, 5, 57, 0.8),  
-  rgba(2, 2, 24, 0.4)   
-); 
-  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  color: antiquewhite;
-  padding-top:1rem;
-  height: max-content;
-  transition: background-color 1s ease;
-}
 
-.nav-item-text{
-  color: antiquewhite !;
-}
-
-.navbar-brand-cus {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 0.75rem;
-  width: 20%;
-}
-
-
-.navbar-brand-cus{
-  position: relative;
-}
-.nav-brand-name {
-  
-}
-
-.nav-brand-name h2 {
-  font-size: 2.5rem;  
-  position: absolute;
-  transform: translate(-50%, -50%);
-
-}
-
-.brand-name-first {
-  color: transparent;
-  -webkit-text-stroke: 2px #77afc9;
-}
-
-.brand-name-second {
-  color: #05a8f3;
-  -webkit-text-stroke: 2px #05a8f3;
-  animation: waves 2s ease-in-out infinite;
-} */
 
 /* Navbar Container */
 .navbar-cus {
@@ -231,11 +170,6 @@
   padding: 1rem;
 }
 
-.navbar-brand-cus img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
 .nav-items {
   /* position: absolute;
@@ -259,6 +193,14 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
+}
+
+.nav-item-content {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem; 
+  margin-bottom: 0.3rem;
+
 }
 
 .nav-items li {
@@ -347,15 +289,12 @@
 .nav-item-cus.theme-toggle:hover:{
   width: 0 !important;
 }
+
 .show-menu ul {
- 
   gap: 0.75rem;
   padding: 0.25rem;
   margin: auto;
  
-}
-.show-menu ul>l{
-
 }
 
 /* .navbar-cus-show-menu {
@@ -395,23 +334,25 @@
     width: auto;
     height: auto;
     width: 80%;
+
   }
 
+  .nav-item-content{
+    gap:8px;
+  }
   .nav-items ul {
     flex-direction: row;
     /* list-style: none; */
     justify-content: space-evenly;
     width: 100%;
-    transition: 2s ease-out;
+
   }
+
   .nav-items li {
     width: auto;
+    
   }
-  .navbar-brand-cus img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
+
 }
 
 .nav-icon {
@@ -422,11 +363,7 @@
 }
 
 /* Default styles (for smaller screens) */
-.nav-item-content {
-  display: flex;
-  align-items: center;
-  gap: 8px; 
-}
+
 
 .nav-item-icon {
   font-size: 1.2rem; 
@@ -449,3 +386,4 @@
     font-size: 1.5rem; 
   }
 }
+
