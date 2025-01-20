@@ -2,7 +2,7 @@
 
 import React from "react";
 import placeholder from "../assests/placeholder.jpeg";
-import Timeline from "./Timeline"; // Import the Timeline component
+import Timeline from "./Timeline"; 
 
 import "../Css/Education.css";
 
@@ -37,7 +37,7 @@ const Education = () => {
 
   return (
     <div className="education-timeline-section">
-      <h1>The Road to Knowledge: My Education Timeline</h1>
+      <h1 >The Road to Knowledge: My Education Timeline</h1>
       <Timeline timelineData={timelineData} />
     </div>
   );

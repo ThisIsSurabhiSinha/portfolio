@@ -1,25 +1,3 @@
-/* .about-section {
-    background-color: #f9f9f9;
-    color: #333;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .about-image img {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .about-text {
-    margin-top: 1rem;
-    padding: 0 1rem;
-  }
-   */
 
    .tab-content{
     width: 80%;
@@ -67,19 +45,29 @@
   
   .about-text h2 {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 30px;
 
   }
-  
+
   .about-text p {
-    font-size: 16px;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
+  
   
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
       text-align: center;
+    }
+
+    .about-text h2{
+      font-size: 20px ;
+    }
+
+    .about-text p {
+      font-size: 14px;
+      line-height: 1.5;
     }
   }
   
@@ -103,11 +91,11 @@
     
   }
   
-  .about-text h2 {
+  /* .about-text h2 {
     margin-bottom: 10px;
     font-size: 40px;
     font-weight: 600;
-  }
+  } */
 
   .about-text.dark h2{
      color:#58a6ff;
@@ -116,11 +104,7 @@
   .about-text.light h2{
     color: #041120;
   }
-  
-  .about-text p {
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
+
   
   .highlight {
     font-weight: bold;
@@ -139,6 +123,10 @@
       flex-direction: column;
       text-align: center;
     }
+    .about-container{
+      padding: 0.35rem;
+    }
+
   }
 
   .sub-navbar {
@@ -186,4 +174,15 @@
 
   .sub-navbar.light button.active{
     background-color: #041120;
+  }
+
+  @media screen and (max-width:405px) {
+ 
+    .sub-navbar button {
+      padding: 5px 10px; 
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: 400;
+    }
+  
   }

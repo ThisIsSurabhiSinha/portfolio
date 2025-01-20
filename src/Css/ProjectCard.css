@@ -6,7 +6,41 @@
     align-self: center;
     justify-self: center;
   }
+
+  @media screen and (max-width:310px) {
+    .project-card {
+      perspective: 1000px;
+      margin: 5px;
+      width: 250px !important;
+      height: 300px !important;
+      align-self: center;
+      justify-self: center;
+    }
+  }
   
+  @media screen and (max-width:468px) {
+    .project-card {
+      perspective: 1000px;
+      margin: 15px;
+      width: 300px;
+      height: 350px;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .card-front,
+    .card-back{
+      font-weight: 200;
+    }
+
+    .card-front{
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+
   .card-inner {
     position: relative;
     width: 100%;
@@ -31,12 +65,11 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0, 0.4);
     font-weight: 500;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+
   }
   
   .card-front {
-    /* background-color: #070719;
-    color: #58a6ff; */
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,9 +79,9 @@
     font-size: 1.25rem;
   }
 
-  .card-front h2{
+  /* .card-front h2{
     font-size: 1.25rem;
-  }
+  } */
 
   .card-front.dark{
     background-color: #070719;
@@ -69,16 +102,16 @@
   }
   
   .card-back {
-    /* background-color: #01013197;
-    color: rgb(183, 176, 176); */
+
     transform: rotateY(180deg);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-  }
+  } 
 
+  
   .card-back.dark{
     background-color: #01013197;
     color: rgb(183, 176, 176);
@@ -122,4 +155,158 @@
     text-decoration:underline !important;
     text-underline-offset: 3px;
   }
-  
+   
+
+
+/* 
+  .project-card {
+    perspective: 1000px;
+    margin: 20px;
+    width: 350px;
+    height: 400px;
+    align-self: center;
+    justify-self: center;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.4);
+    font-weight: 500;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
+.card-front h2 {
+    font-size: 1.25rem;
+}
+
+.card-front.dark {
+    background-color: #070719;
+    color: #58a6ff;
+    box-shadow: 0 4px 6px #58cded, 0 1px 3px #54c3e299;
+}
+
+.card-front.light {
+    background-color: #d1dee5;
+    color: #070719;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-back.dark {
+    background-color: #01013197;
+    color: rgb(183, 176, 176);
+    box-shadow: 0 4px 6px #58cded, 0 1px 3px #54c3e299;
+}
+
+.card-back.light {
+    background-color: #d1dee5;
+    color: #070719;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-back h3,
+.card-back h4 {
+    color: orange;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-links a {
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.project-links.dark a {
+    color: #58a6ff;
+}
+
+.project-links.light a {
+    color: #070719;
+}
+
+.project-links a:hover {
+    z-index: 10;
+    color: rgb(11, 107, 148);
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 1rem;
+    }
+
+    .card-front img {
+        height: 60%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 0.9rem; 
+    }
+
+    .card-front img {
+        height: 50%; 
+    }
+} */

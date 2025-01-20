@@ -225,7 +225,7 @@ const Project = () => {
             <button
               key={category}
               className={`category-button ${
-                selectedCategory === category ? "active" : ""
+                selectedCategory === category ? "active-category" : ""
               } ${isDarkMode ? "dark" : "light"}`}
               onClick={() => setSelectedCategory(category)}
             >

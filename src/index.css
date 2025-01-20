@@ -26,7 +26,7 @@
   --bg-color: #070719; 
   --text-color: #e4e4e4; 
   --primary-color: #05a8f3; 
-  --secondary-color: rgb(53, 159, 150); 
+  --secondary-color: rgb(53, 159, 150);
   --highlight-color: orange; 
   --light-gray: #e4e4e4; 
   --accent-color: #58a6ff; 
@@ -133,7 +133,7 @@ a {
 }
 
 .main-section {
-  flex-grow: 1; /* This ensures it grows to take available space */
+  flex-grow: 1; 
 }
 
 .site-wrapper {

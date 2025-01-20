@@ -1,4 +1,5 @@
 
+/* Container Styling */
 .skills-container {
     padding: 50px;
     text-align: center;
@@ -60,11 +61,13 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
 }
 
+
 .skill-row.light {
     border: 1px solid #282828; 
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Added box-shadow */
 }
+
 
 /* Skill Row Heading */
 .skill-row h3 {
@@ -167,7 +170,7 @@
     /* color: #fff; */
 }
 
-/* Media Queries for Different Screen Sizes */
+
 @media (max-width: 1200px) {
     .skills-container h2 {
         font-size: 2rem;
@@ -175,15 +178,6 @@
 
     .skill-row h3 {
         font-size: 1.25rem; 
-    }
-
-    .skill-items {
-        padding: 0.5rem;
-    }
-
-    .skill-row {
-        width: 80%;/* Adjust skill row width for better fitting */
-        padding: 0.5rem;
     }
 
     .skill-item {
@@ -200,18 +194,8 @@
         font-size: 1rem;
     }
 
-    .skill-items {
-        padding: 0.5rem;
-    }
-
-    .skill-row {
-        width: 100%; /* Skill row width adjustment */
-        padding: 0.5rem;
-    }
-
     .skill-item {
         font-size: 0.85rem;
-        padding: 6px 10px; /* Reduce padding for smaller screens */
     }
 }
 
@@ -224,19 +208,7 @@
         font-size: 0.9rem;
     }
 
-    .skills-container {
-        padding: 20px; 
-    }
-
-    .skill-row {
-        width: 100%; 
-        padding: 0.25rem;
-    }
-
     .skill-item {
-        font-size: 0.7rem;
-        padding: 3px 6px; 
-        border-radius: 2px;
-       /* Further reduce padding */
+        font-size: 0.75rem;
     }
 }

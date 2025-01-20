@@ -12,6 +12,7 @@
   width: 100%;
   flex-shrink: 0;
   z-index: 100000;
+  min-width: 100vw;
 }
 
 .footer-left,
@@ -68,7 +69,9 @@
   .footer-cus {
     flex-direction: column;
     justify-content: center;
+    min-width:100vw ;
   }
+
   .footer-right {
     border-left: 0ch;
     border-top: 1px solid #444;
