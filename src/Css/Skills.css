@@ -171,7 +171,7 @@
 /* Media Queries for Different Screen Sizes */
 @media (max-width: 1200px) {
     .skills-container h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .skill-row h3 {

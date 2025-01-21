@@ -339,7 +339,7 @@
   padding-top: 1rem;
   height: max-content;
   min-width: 100vw;
-  background-color: aqua;
+  width: 100%;
 }
 
 .navbar-cus.dark{
@@ -483,6 +483,7 @@
   width: 100%;
   align-self: center;
   margin: auto;
+  /* background-color: blue; */
 }
 
 .nav-items ul {
@@ -491,6 +492,7 @@
   justify-content: center;
   flex-direction: column;
   border-radius: 10px;
+  align-self: center;
 }
 
 .nav-item-content {
@@ -562,11 +564,17 @@
   align-items: center !important;
   align-self: center !important;
   justify-self: center !important;
-  width: 100% !important;
-  margin-left: 180px;
+  width: 80vw;
+  /* margin-left: 180px; */
+  margin: auto;
   height: 100vh;
-  transition: 0.2 ease;
+  /* transition: 0.2 ease; */
+
 }
+/* 
+.navbar-cus-show-menu{
+    width: 100%;
+} */
 
 .theme-toggle{
   cursor: pointer;
@@ -609,7 +617,7 @@
     flex-direction: row;
     width: auto;
     height: auto;
-    width: 80%;
+    width: 100%;
   }
 
   .nav-item-content{

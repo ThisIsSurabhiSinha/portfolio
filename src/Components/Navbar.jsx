@@ -400,7 +400,7 @@ const Navbar = () => {
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? (
-          <FaTimes style={{ color: "red", fontSize: "1.5rem" }} />
+          <FaTimes style={{ color: "red", fontSize: "1.5rem" , "marginRight":"50px"}} />
         ) : (
           <FaBars style={{ color: "#E4E4E4", fontSize: "1.5rem" }} />
         )}
