@@ -1,58 +1,123 @@
-.modal-overlay {
+/* .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    margin: auto;
+    align-self: center;
   }
-  
-  .modal-content {
-    background: rgb(86, 115, 156);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .modal-content h3 {
-    margin-bottom: 10px;
-  }
-  
-  .modal-content button {
-    /* background: #007bff; */
-    color: white !important;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    gap:0.25rem;
-  }
-  
-  /* .modal-content button:hover {
+   */
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 50%; /* Start at the vertical center */
+  left: 50%; /* Start at the horizontal center */
+  width: 50%; /* Set the desired width */
+  height: 50%; /* Set the desired height */
+  background: transparent; /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Horizontally center content inside */
+  align-items: center; /* Vertically center content inside */
+  z-index: 9999; /* Keep it above other elements */
+  transform: translate(-50%, -50%); /* Adjust position to center perfectly */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-content.light {
+  background: rgba(127, 175, 198, 0.963);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content.dark {
+  background: rgb(69, 103, 155);
+  color: white;
+  box-shadow: 0 2px 10px rgba(136, 135, 135, 0.1);
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 0.25rem;
+}
+
+.modal-content.dark button {
+  color: white !important;
+}
+
+.modal-content.light button {
+  color: rgb(15, 15, 15);
+}
+
+/* .modal-content button:hover {
     background: #0056b3;
   } */
 
-  .modal-content button {
-    background-color: transparent;
-    border: 1px solid #87aed8 !important;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .modal-content button:hover {
-    background-color: #58a6ff90;
-    color: #ffffff;
-  
-  }
-  
-  .modal-content p ,  .modal-content h3{
-    color: rgba(255, 255, 255, 0.847) !important;
-  }
-  
+.modal-content button {
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.modal-content.light button{
+  border: 1px solid #041120 !important;
+}
+
+.modal-content.dark button{
+  border: 1px solid rgb(226, 216, 216) !important;
+}
+
+.modal-content button:hover {
+  background-color: #5fa1ec90;
+  color: #ffffff;
+}
+
+.modal-content.dark p,
+.modal-content.dark h3 {
+  color: white ;
+}
+
+.modal-content.light p,
+.modal-content.light h3 {
+  color: black ;
+}
+
+/* Error message styling */
+
+/* Sending message status */
+.sending-status {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.option-btn {
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .sending-status {
   text-align: center;
   font-size: 18px;
@@ -68,24 +133,8 @@
 .error-message {
   text-align: center;
   font-size: 18px;
-  color: rgba(255, 0, 0, 0.753) !important;
+  color: rgb(160, 7, 7) !important;
+  font-weight: 600;
 }
 
-/* Error message styling */
 
-
-/* Sending message status */
-.sending-status {
-  font-size: 16px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.option-btn{
-
-  width: max-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}

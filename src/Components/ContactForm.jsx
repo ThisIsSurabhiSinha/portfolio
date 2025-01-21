@@ -266,12 +266,9 @@ const ContactForm = ({ onModalOpen, onModalClose, onModalUpdate }) => {
           );
   
           if (userEmailResponse.status!==200) {
-            console.log("ok thing ", userEmailResponse.ok)
-            console.log("user email res ", userEmailResponse)
             throw new Error("Failed to send user email");
           }
   
-          console.log("User email sent successfully!", userEmailResponse.status, userEmailResponse.text);
   
           // Send the second email
           const ownerEmailResponse = await emailjs.sendForm(
@@ -282,11 +279,9 @@ const ContactForm = ({ onModalOpen, onModalClose, onModalUpdate }) => {
           );
   
           if (ownerEmailResponse.status!==200) {
-            console.log(ownerEmailResponse)
             throw new Error("Failed to send portfolio owner email");
           }
   
-          console.log("Portfolio owner email sent successfully!", ownerEmailResponse.status, ownerEmailResponse.text);
   
           // If both emails were sent successfully
           onModalUpdate({

@@ -21,11 +21,12 @@
 .skills-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-weight: 600;
+    /* font-weight: 500; */
 }
 
 .skills-container.dark h2 {
-    color: rgb(88, 166, 255);
+    /* color: rgb(88, 166, 255); */
+    color: antiquewhite;
 }
 
 .skills-container.light h2 {
@@ -237,6 +238,7 @@
         font-size: 0.7rem;
         padding: 3px 6px; 
         border-radius: 2px;
+        font-weight: 600;
        /* Further reduce padding */
     }
 }

@@ -39,6 +39,7 @@
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
+  /* position: relative; */
 }
 
 /* Dark Theme */
@@ -50,12 +51,13 @@
 .contact-container h2{
    text-align: center;
    font-size: 2.5rem;
-  
+   color: antiquewhite;
 }
 .contact-container.dark h2,
 .contact-container.dark h3,
 .contact-container.dark label {
-  color: #58a6ff;
+  /* color: #58a6ff; */
+  
   padding: 0.3rem;
 }
 

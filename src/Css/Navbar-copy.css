@@ -1,5 +1,3 @@
-
-
 /* Navbar Container */
 .navbar-cus {
   position: sticky;
@@ -12,7 +10,8 @@
   font-size: 2.5rem;
   padding-top: 1rem;
   height: max-content;
-  min-width:100dvw; ;
+  min-width: 100vw;
+  background-color: aqua;
 }
 
 .navbar-cus.dark{
@@ -38,8 +37,6 @@
 .nav-item-text {
   color: antiquewhite;
 }
-
-
 
 /* Brand section */
 .nav-brand-name-wrap {
@@ -77,32 +74,36 @@
 /* Adjustments for mobile screens */
 @media screen and (max-width: 1039px) {
   .navbar-cus {
-
-    font-size: 2rem;
+    font-size: 2rem; /* Decrease font size on medium screens */
   }
 
   .navbar-brand-cus {
-
-
     align-items: center;
     justify-content: flex-start;
-
     width: 100%; 
   }
 
   .nav-brand-name h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem; /* Decrease font size for the brand name */
+  }
+
+  .nav-item-text {
+    font-size: 1.25rem; /* Slightly smaller text */
   }
 
 }
 
 @media screen and (max-width: 480px) {
   .navbar-cus {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Further reduce font size for smaller screens */
   }
 
   .nav-brand-name h2 {
     font-size: 2rem; 
+  }
+
+  .nav-item-text {
+    font-size: 1rem; /* Even smaller text for very small screens */
   }
 
 }
@@ -169,7 +170,6 @@
   align-items: center;
   gap: 1.25rem; 
   margin-bottom: 0.3rem;
-
 }
 
 .nav-items li {
@@ -200,7 +200,6 @@
   transition: width 0.5s ease-out;
 }
 
-
 .nav-item-cus:hover::after {
   width: 100%;
 }
@@ -214,9 +213,7 @@
   height: 0.2rem;
   background-color: orange;
   width: 100%;
-
 }
-
 
 .menu-icon {
   display: flex;
@@ -238,8 +235,9 @@
   align-self: center !important;
   justify-self: center !important;
   width: 100% !important;
-  margin-left:180px ; 
-
+  margin-left: 180px;
+  height: 100vh;
+  transition: 0.2 ease;
 }
 
 .theme-toggle{
@@ -254,7 +252,6 @@
   gap: 0.75rem;
   padding: 0.25rem;
   margin: auto;
- 
 }
 
 /* For larger screens */
@@ -285,12 +282,12 @@
     width: auto;
     height: auto;
     width: 80%;
-
   }
 
   .nav-item-content{
     gap:8px;
   }
+
   .nav-items ul {
     flex-direction: row;
     justify-content: space-evenly;
@@ -300,7 +297,6 @@
   .nav-items li {
     width: auto;
   }
-
 }
 
 .nav-icon {
@@ -327,9 +323,8 @@
     align-items: center;
   }
 
-
   .nav-item-text {
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
   }
 }
 
