@@ -1,25 +1,31 @@
+
 .skills-container {
     padding: 50px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
+/* Dark Mode */
 .skills-container.dark {
     color: white;
     background: linear-gradient(to bottom, rgba(3, 3, 32, 0.8), rgba(3, 3, 32, 0.4));
-}
+} 
 
+/* Light Mode */
 .skills-container.light {
     color: rgb(14, 14, 14);
     background: linear-gradient(to bottom, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.4));
-}
+} 
 
+/* Heading Styling */
 .skills-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    /* font-weight: 500; */
 }
 
 .skills-container.dark h2 {
+    /* color: rgb(88, 166, 255); */
     color: antiquewhite;
 }
 
@@ -27,6 +33,7 @@
     color: #041120;
 }
 
+/* Content Area */
 .skills-content {
     display: flex;
     flex-direction: column;
@@ -35,6 +42,7 @@
     gap: 20px;
 }
 
+/* Skill Row */
 .skill-row {
     width: 60%;
     display: flex;
@@ -46,18 +54,20 @@
     min-width: 60%;
 }
 
+/* Dark Mode Skill Row */
 .skill-row.dark {
     border: 1px solid #555;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); 
 }
 
 .skill-row.light {
-    border: 1px solid #282828;
+    border: 1px solid #282828; 
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Added box-shadow */
 }
 
+/* Skill Row Heading */
 .skill-row h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -68,14 +78,17 @@
     padding: 0.25rem;
 }
 
+/* Dark Mode Skill Row Heading */
 .skill-row.dark h3 {
     color: #00d4ff;
 }
 
+/* Light Mode Skill Row Heading */
 .skill-row.light h3 {
-    color: #0066cc;
+    color: #0066cc; /* Slightly darker blue for contrast */
 }
 
+/* Skill Row Heading Highlight */
 .skill-row h3::after {
     content: "";
     position: absolute;
@@ -87,14 +100,17 @@
     transition: width 0.5s ease-out;
 }
 
+/* Dark Mode Highlight */
 .skill-row.dark h3::after {
     background-color: rgba(255, 166, 0, 0.63);
 }
 
+/* Light Mode Highlight */
 .skill-row.light h3::after {
-    background-color: rgba(255, 140, 0, 0.8);
+    background-color: rgba(255, 140, 0, 0.8); /* Brighter orange */
 }
 
+/* Skill Items Container */
 .skill-items {
     display: flex;
     gap: 10px;
@@ -105,6 +121,7 @@
     flex-direction: column;
 }
 
+/* Skill Item Place */
 .skill-item-place {
     display: flex;
     flex-direction: row;
@@ -114,6 +131,7 @@
     height: auto;
 }
 
+/* Skill Item */
 .skill-item {
     padding: 8px 12px;
     border-radius: 5px;
@@ -121,36 +139,43 @@
     transition: all 0.3s ease;
 }
 
+/* Dark Mode Skill Item */
 .skill-item.dark {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 
+/* Light Mode Skill Item */
 .skill-item.light {
-    background: rgba(200, 200, 200, 0.8);
+    background: rgba(200, 200, 200, 0.8); /* Light grey background */
     color: #000;
 }
 
+/* Hover Effect */
 .skill-item:hover {
     transform: scale(1.1);
 }
 
+/* Dark Mode Hover */
 .skill-item.dark:hover {
     background: rgba(255, 166, 0, 0.715);
     color: #000;
 }
 
+/* Light Mode Hover */
 .skill-item.light:hover {
     background: rgba(255, 166, 0, 0.715);
+    /* color: #fff; */
 }
 
+/* Media Queries for Different Screen Sizes */
 @media (max-width: 1200px) {
     .skills-container h2 {
         font-size: 2.5rem;
     }
 
     .skill-row h3 {
-        font-size: 1.25rem;
+        font-size: 1.25rem; 
     }
 
     .skill-items {
@@ -158,7 +183,7 @@
     }
 
     .skill-row {
-        width: 80%;
+        width: 80%;/* Adjust skill row width for better fitting */
         padding: 0.5rem;
     }
 
@@ -181,13 +206,13 @@
     }
 
     .skill-row {
-        width: 100%;
+        width: 100%; /* Skill row width adjustment */
         padding: 0.5rem;
     }
 
     .skill-item {
         font-size: 0.85rem;
-        padding: 6px 10px;
+        padding: 6px 10px; /* Reduce padding for smaller screens */
     }
 }
 
@@ -201,20 +226,19 @@
     }
 
     .skills-container {
-        padding: 20px;
+        padding: 20px; 
     }
 
     .skill-row {
-        width: 100%;
+        width: 100%; 
         padding: 0.25rem;
     }
 
     .skill-item {
         font-size: 0.7rem;
-        padding: 3px 6px;
+        padding: 3px 6px; 
         border-radius: 2px;
         font-weight: 600;
+       /* Further reduce padding */
     }
 }
-
-

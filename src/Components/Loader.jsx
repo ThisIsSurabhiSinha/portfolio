@@ -1,4 +1,4 @@
-// Components/Loader.jsx
+
 import React from "react";
 import { Spinner } from "react-bootstrap";
 

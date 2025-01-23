@@ -1,39 +1,33 @@
-// 
-
 import React from "react";
 import placeholder from "../assests/placeholder.jpeg";
-import Timeline from "./Timeline"; // Import the Timeline component
-
+import Timeline from "./Timeline";
 import "../Css/Experiences.css";
 
 const Experiences = () => {
   const timelineData = [
     {
-      type: "left-container",
-      img: placeholder,
-      title: "Internship at XYZ Corp",
-      duration: "2023-2024",
-      description: "I worked on developing new features for the website.",
-    },
-    {
       type: "right-container",
       img: placeholder,
-      title: "Freelancer",
-      duration: "2024-Present",
-      description: "Building custom websites and applications for clients.",
+      title: "Competitive Programming",
+      duration: "2023-Present",
+      description:
+        "Actively participate in coding contests to hone problem-solving and algorithmic skills. Solved over [Number of Problems] problems across a variety of topics, including dynamic programming, graph algorithms, and data structures. Achieved consistent performance with an improving ranking on both platforms.",
     },
+
     {
       type: "left-container",
       img: placeholder,
-      title: "Software Engineer",
-      duration: "2025-2027",
-      description: "Developing software solutions for enterprise clients.",
+      title: "Team Project: Club Catalyst",
+      duration: "2023-2023",
+      description:
+        "Collaborated with a team to create 'Club Catalyst', a college club management website. Designed and implemented backend functionalities using Django, ensuring seamless club registrations, event management, and member tracking. Focused on database integration and optimizing API endpoints for better performance.",
     },
+ 
   ];
 
   return (
     <div>
-      <h1 style={{"textAlign":"center"}}>My Journey So Far</h1>
+      <h1 style={{ textAlign: "center" }}>My Journey So Far</h1>
       <Timeline timelineData={timelineData} />
     </div>
   );

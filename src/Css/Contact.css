@@ -1,36 +1,4 @@
-/* 
-  .contact-container {
-    font-family: Arial, sans-serif;
-    color: #58a6ff;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .contact-container h2 {
-    text-align: center;
-    color: #58a6ff;
-  }
-  
- .contact-container h3 {
-    color: #58a6ff;
-    margin-bottom: 15px;
-  }
-  
-  .form-section, .info-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: rgba(3, 3, 32, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .contact-container label {
-    margin: 10px 0 5px;
-    color: #58a6ff;
-    display: block;
-  } */
+
 
   /* Common Container Styles */
 .contact-container {
@@ -39,14 +7,14 @@
   margin: 50px auto;
   padding: 20px;
   border-radius: 10px;
-  /* position: relative; */
+
 }
 
-/* Dark Theme */
+
 .contact-container.dark {
-  /* background-color: rgba(3, 3, 32, 0.8); */
+ 
   color: #58a6ff;
-  /* border: 1px solid rgb(11, 107, 148); */
+
 }
 
 .contact-container h2{
@@ -57,17 +25,13 @@
 .contact-container.dark h2,
 .contact-container.dark h3,
 .contact-container.dark label {
-  /* color: #58a6ff; */
-  
   padding: 0.3rem;
 }
 
-/* Light Theme */
+
 .contact-container.light {
   background-color: transparent;
   color: rgb(32, 32, 32);
-  
-  /* border: 1px solid rgb(173, 216, 230); */
 }
 
 .contact-container.light h2{
@@ -77,7 +41,7 @@
 .contact-container.light h3,
 .contact-container.light label {
   padding: 0.3rem;
-  color: rgb(0, 102, 204); /* A lighter, fresher blue for the light theme */
+  color: rgb(0, 102, 204); 
 }
 
 /* Form Section Styles */
@@ -90,34 +54,17 @@
   border: 1px solid rgb(11, 107, 148); 
 }
 
-/* Dark Theme Sections */
 .contact-container.dark .form-section,
 .contact-container.dark .info-section {
   background-color: rgba(3, 3, 32, 0.8);
 }
 
-/* Light Theme Sections */
 .contact-container.light .form-section,
 .contact-container.light .info-section {
-  background-color: rgba(245, 245, 245, 0.9); /* Soft light gray */
+  background-color: rgba(245, 245, 245, 0.9); 
 }
 
-/* Input and Textarea Styles */
-/* .contact-container.dark input,
-.contact-container.dark textarea {
-  border: 1px solid rgb(11, 107, 148);
-  background-color: rgba(3, 3, 32, 0.8);
-  color: rgb(183, 176, 176);
-}
 
-.contact-container.light input,
-.contact-container.light textarea {
-  border: 1px solid rgb(173, 216, 230);
-  background-color: rgba(240, 232, 232, 0.9);
-  color: rgb(32, 32, 32);
-} */
-
-  
   .contact-container input, .contact-container textarea {
     width: 100%;
     padding: 10px;
@@ -144,13 +91,6 @@
 .contact-container.dark input:focus, .contact-container.dark textarea:focus{
   outline-color:  rgb(48, 166, 217);
 }
-/* 
-  .contact-container.light input, .contact-container.light textarea{
-    border: 1px solid rgb(11, 107, 148);
-    background-color: rgba(3, 3, 32, 0.8);
-    color: rgb(183, 176, 176);
-  } */
-
 
   .contact-container p {
     margin: 8px 0;

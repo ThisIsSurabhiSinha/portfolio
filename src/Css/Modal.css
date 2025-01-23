@@ -1,34 +1,16 @@
-/* .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    margin: auto;
-    align-self: center;
-  }
-   */
-
-
-
 .modal-overlay {
   position: fixed;
-  top: 50%; /* Start at the vertical center */
-  left: 50%; /* Start at the horizontal center */
-  width: 50%; /* Set the desired width */
-  height: 50%; /* Set the desired height */
-  background: transparent; /* Semi-transparent background */
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: transparent;
   display: flex;
-  justify-content: center; /* Horizontally center content inside */
-  align-items: center; /* Vertically center content inside */
-  z-index: 9999; /* Keep it above other elements */
-  transform: translate(-50%, -50%); /* Adjust position to center perfectly */
-  border-radius: 8px; /* Optional: Add rounded corners */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
 }
 
 .modal-content {
@@ -67,10 +49,6 @@
 .modal-content.light button {
   color: rgb(15, 15, 15);
 }
-
-/* .modal-content button:hover {
-    background: #0056b3;
-  } */
 
 .modal-content button {
   background-color: transparent;
