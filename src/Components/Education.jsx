@@ -40,8 +40,8 @@ const Education = () => {
   return (
     <div className="education-timeline-section">
       <h1 >The Road to Knowledge: My Education Timeline</h1>
-      {/* <Timeline timelineData={timelineData} /> */}
-      <Timeline timelineData={[]} />
+      <Timeline timelineData={timelineData} />
+      
     </div>
   );
 };
