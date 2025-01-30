@@ -5,7 +5,7 @@
   font-family: Arial, sans-serif;
   max-width: 900px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 
 }
@@ -26,6 +26,7 @@
 .contact-container.dark h3,
 .contact-container.dark label {
   padding: 0.3rem;
+  padding-top:0;
 }
 
 

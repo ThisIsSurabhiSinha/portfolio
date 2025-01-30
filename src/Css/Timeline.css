@@ -61,6 +61,7 @@
     right: -20px;
     top: 35px;
     z-index: 10;
+    background-color: #87cde0;
   }
   .right-container img {
     left: -20px;
@@ -71,7 +72,7 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    background: #3c12d4af;
+    background: #2f0cacaf;
     top: 0px;
     left: 50%;
     margin-left: -3px;

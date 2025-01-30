@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 import "../Css/Timeline.css";
 import "../Css/Education.css";
-import placeholder from "../assests/placeholder.jpeg";
+import placeholder from "../assests/education-icon.png";
 import { ThemeContext } from "./ThemeContext";
 
 const Timeline = ({ timelineData }) => {
