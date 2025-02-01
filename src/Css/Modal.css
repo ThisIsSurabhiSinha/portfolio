@@ -20,13 +20,14 @@
 }
 
 .modal-content.light {
-  background: rgba(127, 175, 198, 0.963);
+  background:#b6d9e6;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color:#041120;
 }
 
 .modal-content.dark {
-  background: rgb(69, 103, 155);
-  color: white;
+  background: rgb(170, 187, 212);
+  color: #041120;
   box-shadow: 0 2px 10px rgba(136, 135, 135, 0.1);
 }
 
@@ -61,17 +62,19 @@
 }
 
 .modal-content.dark button{
-  border: 1px solid rgb(226, 216, 216) !important;
+  border: 1px solid #041120 !important;
+  color:#041120 !important;
 }
 
 .modal-content button:hover {
-  background-color: #5fa1ec90;
+  background-color: #041120 ;
   color: #ffffff;
 }
 
 .modal-content.dark p,
 .modal-content.dark h3 {
-  color: white ;
+  color: #041120 ;
+  font-weight: 600;
 }
 
 .modal-content.light p,
@@ -79,7 +82,7 @@
   color: black ;
 }
 
-/* Error message styling */
+
 
 /* Sending message status */
 .sending-status {
@@ -105,7 +108,8 @@
 .success-message {
   text-align: center;
   font-size: 18px;
-  color: rgba(0, 128, 0, 0.817) !important;
+  color: rgba(8, 110, 8, 0.945) !important;
+
 }
 
 .error-message {
@@ -116,3 +120,10 @@
 }
 
 
+.confirm.dark p{
+  color:#041120 !important;
+}
+
+.confirm.light h3{
+  color:#041120 !important;
+}

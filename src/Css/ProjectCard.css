@@ -79,9 +79,27 @@
     font-size: 1.25rem;
   }
 
-  /* .card-front h2{
-    font-size: 1.25rem;
-  } */
+   .card-front h2{
+    font-size: 1.5rem;
+    /* background-color:rgba(255, 255, 255, 0.2); ; */
+    padding:0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    color:antiquewhite;
+  }
+  /* .skill-item.dark {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.skill-item.light {
+    background: rgba(200, 200, 200, 0.8);
+    color: #000;
+}
+    */
+  
 
   .card-front.dark{
     background-color: #070719;
@@ -213,3 +231,12 @@
     font-weight: 400;;
   }
 }
+
+/* .card-front.dark {
+  background-color:rgba(255, 255, 255, 0.2); ;
+}
+
+.card-front.light{
+  background-color:rgba(255, 255, 255, 0.2); ;
+} */
+
