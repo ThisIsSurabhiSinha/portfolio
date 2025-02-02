@@ -1,4 +1,4 @@
-**# My Portfolo**
+**# My Portfolio**
 
 ## 🚀 **About This Project**
 This is my personal portfolio website built using **React.js, HTML, CSS, and JavaScript**, along with several modern libraries and frameworks. The website showcases my **skills, education, projects, resume, and contact details**. It also includes an email-sending feature for easy communication.
