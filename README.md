@@ -52,7 +52,7 @@ This is my personal portfolio website built using **React.js, HTML, CSS, and Jav
    ```
 
 ## 📬 **Contact**
-- 📧 **Email:** [email@example.com](mailto:surabhisinha514@gmail.com)
+- 📧 **Email:** [email](mailto:surabhisinha514@gmail.com)
 - 💼 **LinkedIn:** [linkedin-profile](www.linkedin.com/in/thisissurabhisinha)
 - 🖥️ **GitHub:** [github-profile](https://github.com/ThisIsSurabhiSinha/)
 
