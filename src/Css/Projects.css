@@ -5,6 +5,11 @@
 .project-container h1{
   margin-top:2.5rem;
 }
+
+.project-container.dark h1{
+  color:antiquewhite;
+}
+
 .display-projects {
     display: grid;
     gap: 20px;

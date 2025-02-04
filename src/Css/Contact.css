@@ -158,8 +158,25 @@
   }
   
 
+  .form-btns{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
 @media screen and (max-width:480px) {
   .contact-container h2{
     font-size: 1.5rem;
   }
+  .form-btns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .form-btns button {
+    padding:10px;
+    font-size: 0.75rem;
+  }
 }
+
