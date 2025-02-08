@@ -6,12 +6,10 @@
 
 .skills-container.dark {
     color: white;
-    background: linear-gradient(to bottom, rgba(3, 3, 32, 0.8), rgba(3, 3, 32, 0.4));
 }
 
 .skills-container.light {
     color: rgb(14, 14, 14);
-    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.4));
 }
 
 .skills-container h2 {

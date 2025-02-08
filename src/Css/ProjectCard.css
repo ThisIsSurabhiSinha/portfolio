@@ -169,7 +169,7 @@
   
   .project-links a:hover {
     z-index: 10;
-    color: rgb(11, 107, 148);
+    color: antiquewhite;
     text-decoration:underline !important;
     text-underline-offset: 3px;
   }
