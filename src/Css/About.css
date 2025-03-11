@@ -32,6 +32,15 @@
     flex-direction: row;
   }
 
+  .about-section.dark{
+    color:antiquewhite;
+  }
+
+  .about-section.light{
+    color:rgb(21, 20, 20);
+    font-weight: 600;
+  }
+
   .about-animation {
     flex: 1;
     max-width: 500px;
@@ -40,13 +49,12 @@
   .about-text {
     flex: 1;
     max-width: 500px;
+    padding: 0.75rem;
     
   }
   
   .about-text h2 {
     margin-bottom: 10px;
-    /* font-size: 1.75rem; */
-
   }
 
   .about-text p {

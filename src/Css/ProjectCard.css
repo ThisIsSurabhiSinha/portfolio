@@ -65,11 +65,9 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0, 0.4);
     font-weight: 500;
-
   }
   
   .card-front {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +79,6 @@
 
    .card-front h2{
     font-size: 1.5rem;
-    /* background-color:rgba(255, 255, 255, 0.2); ; */
     padding:0.5rem;
     border-radius: 5px;
     width: 100%;
@@ -89,17 +86,6 @@
     display: inline-block;
     color:antiquewhite;
   }
-  /* .skill-item.dark {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
-}
-
-.skill-item.light {
-    background: rgba(200, 200, 200, 0.8);
-    color: #000;
-}
-    */
-  
 
   .card-front.dark{
     background-color: #070719;
@@ -120,7 +106,6 @@
   }
   
   .card-back {
-
     transform: rotateY(180deg);
     padding: 20px;
     display: flex;
@@ -169,11 +154,18 @@
   
   .project-links a:hover {
     z-index: 10;
-    color: antiquewhite;
     text-decoration:underline !important;
     text-underline-offset: 3px;
   }
-   
+
+  .project-links.dark a:hover{
+    color: antiquewhite;
+  } 
+
+  .project-links.light a:hover{
+    color: rgb(26, 5, 112);
+  }
+    
   .card-back {
     transform: rotateY(180deg);
     padding: 20px;
@@ -198,6 +190,7 @@
     margin: 5px; 
     transition: all 0.3s ease;
     display: inline-block; 
+    cursor:default!important;
   }
   
   .techno-item.dark {
@@ -231,12 +224,4 @@
     font-weight: 400;;
   }
 }
-
-/* .card-front.dark {
-  background-color:rgba(255, 255, 255, 0.2); ;
-}
-
-.card-front.light{
-  background-color:rgba(255, 255, 255, 0.2); ;
-} */
 

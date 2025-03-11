@@ -43,7 +43,7 @@ const ProjectCard = ({ project }) => {
           </div>
           <h4>Description:</h4>
           <p>{currentProject.description}</p>
-          <div className="project-links">
+          <div className= {`project-links ${isDarkMode ? "dark" : "light"}`}>
             <a href={currentProject.github} target="_blank" rel="noopener noreferrer">
               GitHub Code
             </a>

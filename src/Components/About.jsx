@@ -3,12 +3,13 @@ import React, { useContext } from "react";
 import Lottie from "lottie-react";
 import animationData from "../assests/Main Scene.json";
 import { ThemeContext } from "./ThemeContext";
+import "../Css/About.css";
 
 const About = () => {
   const { isDarkMode } = useContext(ThemeContext);
   const highlight_class = `highlight ${isDarkMode ? "dark" : "light"}`;
   return (
-    <div className="about-section">
+    <div className={`about-section ${isDarkMode ? "dark" : "light"}`}>
       <div className="about-animation">
         <Lottie animationData={animationData} ></Lottie>
       </div>

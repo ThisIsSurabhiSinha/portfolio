@@ -16,12 +16,12 @@ const AboutLayout = () => {
           </button>
         </Slide>
         <Slide top>
-          <button className="nav-button" onClick={() => navigate("education")}>
+          <button className="nav-button" onClick={() => navigate("/about/education")}>
             Education
           </button>
         </Slide>
         <Slide right>
-          <button className="nav-button" onClick={() => navigate("experience")}>
+          <button className="nav-button" onClick={() => navigate("/about/experience")}>
             Experience
           </button>
         </Slide>
