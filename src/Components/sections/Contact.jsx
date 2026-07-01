@@ -1,10 +1,10 @@
 import React, { useState , useContext} from "react";
 import ContactForm from "./ContactForm";
-import Modal from "./Modal";
+import Modal from "../common/Modal";
 import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
-import "../Css/Contact.css";
-import { ThemeContext } from "./ThemeContext";
+import "../../Css/Contact.css";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Contact = () => {
   const {isDarkMode} = useContext(ThemeContext)

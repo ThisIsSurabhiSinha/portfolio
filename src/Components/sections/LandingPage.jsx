@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { Helmet } from "react-helmet-async";
+import { ThemeContext } from "../../context/ThemeContext";
 import Lottie from "lottie-react";
 import { Fade } from "react-awesome-reveal";
-import "../Css/LandingPage.css";
-import animationData from "../assests/landing-page.json";
+import "../../Css/LandingPage.css";
+import animationData from "../../assets/landing-page.json";
           
       const LandingPage = () => {
         const { isDarkMode } = useContext(ThemeContext);
@@ -18,6 +19,12 @@ import animationData from "../assests/landing-page.json";
         };
       
         return (
+          <>
+          <Helmet>
+            <title>Surabhi Sinha — Software Engineer</title>
+            <meta name="description" content="Software Engineer with production experience at Google and Motive. Specialising in mobile development (iOS/Android), backend APIs, and authentication systems." />
+            <meta name="keywords" content="Surabhi Sinha, Software Engineer, iOS, Android, Kotlin Multiplatform, SwiftUI, Google, Motive" />
+          </Helmet>
           <Fade>
             <div className="wrap-landing-page">
             <div className={`landing-page-main ${isDarkMode ? "dark" : "light"}`}>
@@ -29,7 +36,7 @@ import animationData from "../assests/landing-page.json";
            </span>
                 </h1>
                 <p className= {`intro-subheading ${isDarkMode ? "dark" : "light"}`}>
-                  A Full-Stack Developer with hands-on experience in Python, Django, and JavaScript, and a keen problem solver with 500+ solved questions across coding platforms.
+                  Software Engineer with production experience at Google and Motive — building authentication systems, mobile apps, and backend APIs using KMP/KMM, SwiftUI, Java, and REST APIs. 1000+ coding problems solved.
                 </p>
       
                 {/* Download button with conditional classes */}
@@ -49,6 +56,7 @@ import animationData from "../assests/landing-page.json";
             </div>
             </div>
           </Fade>
+          </>
         );
       };
       

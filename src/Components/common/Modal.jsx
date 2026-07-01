@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
-import "../Css/Modal.css";
-import { ThemeContext } from "./ThemeContext";
+import "../../Css/Modal.css";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Modal = ({ message, isLoading, isConfirmation, onConfirm, onClose }) => {
   const { isDarkMode } = useContext(ThemeContext);

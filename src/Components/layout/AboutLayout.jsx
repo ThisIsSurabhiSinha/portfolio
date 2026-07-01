@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-import "../Css/About.css";
-import { ThemeContext } from "./ThemeContext";
+import "../../Css/About.css";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const AboutLayout = () => {
   const navigate = useNavigate();

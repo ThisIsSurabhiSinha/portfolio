@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import "../Css/ProjectCard.css";
-import placeholder from '../assests/placeholder.gif';
-import { ThemeContext } from "./ThemeContext";
+import "../../Css/ProjectCard.css";
+import placeholder from '../../assets/placeholder.gif';
+import { ThemeContext } from "../../context/ThemeContext";
 
 const ProjectCard = ({ project }) => {
   const { isDarkMode } = useContext(ThemeContext);

@@ -1,11 +1,11 @@
-import projects from "../utilities/projectList.js";
+import projects from "../../data/projects.js";
 import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Slide } from "react-awesome-reveal";
-import { ThemeContext } from "./ThemeContext";
-import Loader from "./Loader";
-import ProjectCard from "./ProjectCard";
-import "../Css/Projects.css";
+import { ThemeContext } from "../../context/ThemeContext";
+import Loader from "../common/Loader";
+import ProjectCard from "../common/ProjectCard";
+import "../../Css/Projects.css";
 
 const HomeProject = () => {
   const { isDarkMode } = useContext(ThemeContext);

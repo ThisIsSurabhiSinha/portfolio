@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import LandingPage from "./LandingPage.jsx";
-import Loader from "./Loader";
-import { ThemeProvider } from "./ThemeContext";
+import Loader from "../common/Loader";
 
 const About = lazy(() => import("./About.jsx"));
 const Contact = lazy(() => import("./Contact.jsx"));
@@ -13,17 +12,15 @@ const Experiences = lazy(() => import("./Experiences.jsx"));
 const Home = () => {
   return (
     <>
-      <ThemeProvider>
-        <LandingPage />
-        <Suspense fallback={<Loader />}>
-            <About/>
-            <Education/>
-            <Experiences/>
-          <HomeProject />
-          <Skills />
-          <Contact />
-        </Suspense>
-      </ThemeProvider>
+      <LandingPage />
+      <Suspense fallback={<Loader />}>
+        <About />
+        <Education />
+        <Experiences />
+        <HomeProject />
+        <Skills />
+        <Contact />
+      </Suspense>
     </>
   );
 };

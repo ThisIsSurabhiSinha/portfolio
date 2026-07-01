@@ -15,13 +15,11 @@ const ThemeProvider = ({ children }) => {
   };
 
   useLayoutEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-    } else {
-      document.body.classList.add("light");
-      document.body.classList.remove("dark");
-    }
+    const theme = isDarkMode ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", theme);
+    // Keep body classes for legacy CSS rules during migration
+    document.body.classList.toggle("dark", isDarkMode);
+    document.body.classList.toggle("light", !isDarkMode);
   }, [isDarkMode]);
 
   return (

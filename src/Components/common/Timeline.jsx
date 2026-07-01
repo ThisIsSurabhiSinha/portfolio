@@ -1,10 +1,10 @@
 
 
 import React, { useContext } from "react";
-import "../Css/Timeline.css";
-import "../Css/Education.css";
-import placeholder from "../assests/education-icon.png";
-import { ThemeContext } from "./ThemeContext";
+import "../../Css/Timeline.css";
+import "../../Css/Education.css";
+import placeholder from "../../assets/education-icon.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Timeline = ({ timelineData }) => {
   const { isDarkMode } = useContext(ThemeContext);

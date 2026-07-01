@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ onModalOpen, onModalUpdate }) => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });

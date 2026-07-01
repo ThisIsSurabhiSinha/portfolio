@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import "../Css/Footer.css";
+import "../../Css/Footer.css";
 import { FaGithub, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaCode } from "react-icons/fa"; 
 const Footer = () => {
   const year = new Date().getFullYear();

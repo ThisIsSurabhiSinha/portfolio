@@ -1,8 +1,8 @@
 
 import React, { useState ,useContext} from "react";
 import { NavLink} from "react-router-dom";
-import "../Css/Navbar.css";
-import { ThemeContext } from "./ThemeContext.js"; 
+import "../../Css/Navbar.css";
+import { ThemeContext } from "../../context/ThemeContext";
 import {
   FaBars,
   FaTimes,
@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar-cus ${isDarkMode ? "dark" : "light"} ${isMenuOpen ? "navbar-cus-show-menu" : ""}`}>
-      <div className={`navbar-brand-cus {nav_item_text_class}`}>
+      <div className={`navbar-brand-cus ${nav_item_text_class}`}>
         <div className="nav-brand-name-wrap">
           <div className="nav-brand-name">
             <h2 className="brand-name-first">SURABHI</h2>
@@ -87,17 +87,17 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className={nav_item_cus_class}>
-            <NavLink
-              to="/resume.pdf"
+            <a
+              href={`${process.env.PUBLIC_URL}/resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={closeMenu} 
+              onClick={closeMenu}
             >
               <div className="nav-item-content">
                 <FaFileAlt className="nav-item-icon" />
                 <span className={nav_item_text_class}>Resume</span>
               </div>
-            </NavLink>
+            </a>
           </li>
           <li className={nav_item_cus_class}>
             <NavLink
