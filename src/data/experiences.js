@@ -1,5 +1,7 @@
 const motiveLogoUrl = `${process.env.PUBLIC_URL}/ProjectImages/CompanyLogo/motive_circle_logo.png`;
 const googleLogoUrl = `${process.env.PUBLIC_URL}/ProjectImages/CompanyLogo/google_logo.png`;
+const leetcodeLogoUrl = `${process.env.PUBLIC_URL}/ProjectImages/CompanyLogo/competetiveProgramming_leetcode.jpeg`;
+const iiitkLogoUrl = `${process.env.PUBLIC_URL}/ProjectImages/EducationalInstituteLogo/iiitkottyam_logo_btech.jpeg`;
 
 export const experiences = [
   {
@@ -36,7 +38,7 @@ export const experiences = [
   {
     id: "competitive-programming",
     type: "right-container",
-    img: null,
+    img: leetcodeLogoUrl,
     company: null,
     title: "Competitive Programming & Problem Solving",
     duration: "2023 – Present",
@@ -50,7 +52,7 @@ export const experiences = [
   {
     id: "club-catalyst",
     type: "left-container",
-    img: null,
+    img: iiitkLogoUrl,
     company: null,
     title: "Backend Development — Club Catalyst",
     duration: "2023",
