@@ -88,7 +88,7 @@ const Navbar = () => {
           </li>
           <li className={nav_item_cus_class}>
             <a
-              href={`${process.env.PUBLIC_URL}/resume.pdf`}
+              href="https://drive.google.com/file/d/10iasX2fYpArQ72dI6eUehUhsiAuSELVE/view?usp=share_link"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

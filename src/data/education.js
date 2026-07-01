@@ -1,7 +1,10 @@
+const iiitkLogo = `${process.env.PUBLIC_URL}/ProjectImages/EducationalInstituteLogo/iiitkottyam_logo_btech.jpeg`;
+const kvLogo = `${process.env.PUBLIC_URL}/ProjectImages/EducationalInstituteLogo/KV_highSchool_intermediate.avif`;
+
 export const educationData = [
   {
     type: "right-container",
-    img: null,
+    img: iiitkLogo,
     title: "Bachelor of Technology in Computer Science and Engineering",
     institute: "Indian Institute of Information Technology (IIIT) Kottayam",
     duration: "2022 – 2026",
@@ -10,7 +13,7 @@ export const educationData = [
   },
   {
     type: "left-container",
-    img: null,
+    img: kvLogo,
     title: "Intermediate (Class XII)",
     institute: "Kendriya Vidyalaya Kanpur Cantt",
     duration: "2022",
@@ -19,7 +22,7 @@ export const educationData = [
   },
   {
     type: "right-container",
-    img: null,
+    img: kvLogo,
     title: "High School (Class X)",
     institute: "Kendriya Vidyalaya Kanpur Cantt",
     duration: "2019",

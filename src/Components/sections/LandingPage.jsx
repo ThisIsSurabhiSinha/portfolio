@@ -9,15 +9,6 @@ import animationData from "../../assets/landing-page.json";
       const LandingPage = () => {
         const { isDarkMode } = useContext(ThemeContext);
       
-        // Handle resume download
-        const handleDownloadResume = () => {
-          const resumeUrl = `${process.env.PUBLIC_URL}/resume.pdf`;
-          const link = document.createElement("a");
-          link.href = resumeUrl;
-          link.download = "Surabhi_Sinha_Resume.pdf";
-          link.click();
-        };
-      
         return (
           <>
           <Helmet>
@@ -39,13 +30,14 @@ import animationData from "../../assets/landing-page.json";
                   Software Engineer with production experience at Google and Motive — building authentication systems, mobile apps, and backend APIs using KMP/KMM, SwiftUI, Java, and REST APIs. 1000+ coding problems solved.
                 </p>
       
-                {/* Download button with conditional classes */}
-                <button
+                <a
+                  href="https://drive.google.com/file/d/10iasX2fYpArQ72dI6eUehUhsiAuSELVE/view?usp=share_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`download-button ${isDarkMode ? "dark" : "light"}`}
-                  onClick={handleDownloadResume}
                 >
-                  Download Resume
-                </button>
+                  Resume
+                </a>
               </div>
       
               <div className="img-home-main">
