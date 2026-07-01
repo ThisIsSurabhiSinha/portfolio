@@ -34,7 +34,22 @@ const Timeline = ({ timelineData }) => {
               <h3>{item.company || item.institute}</h3>
             )}
             <small>{item.duration}</small>
-            <p>{item.description}</p>
+            {item.highlights && item.highlights.length > 0 ? (
+              <ul className="timeline-highlights">
+                {item.highlights.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            ) : (
+              item.description && <p>{item.description}</p>
+            )}
+            {item.technologies && item.technologies.length > 0 && (
+              <div className="timeline-tech">
+                {item.technologies.map((tech, i) => (
+                  <span key={i} className="tech-chip">{tech}</span>
+                ))}
+              </div>
+            )}
             <span className={`${item.type}-arrow`} />
           </div>
         </div>
